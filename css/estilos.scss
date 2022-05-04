@@ -3,12 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+$font1: times;
+$color1: rgb(179, 179, 2);
+$color2: rgba(251, 255, 0, 0.815);
 /* --------------------------------GENERAL--------------------------*/
+
 body {
     display: grid;
     background-color: black;
-    color: rgb(179, 179, 2);
+    color: $color1;
 }
 
 h2 {
@@ -19,7 +22,7 @@ h2 {
 @keyframes slidein {
     from {
         margin-left: 100%;
-        width: 300%;
+        width: 300%
     }
 
     to {
@@ -31,8 +34,9 @@ h2 {
 /* NAVBAR NUEVO INICIO */
 .navbar {
     background-color: black !important;
-    border: groove rgba(251, 255, 0, 0.815);
+    border: groove $color2;
 }
+
 
 /* NAVBAR NUEVO FIN */
 .navv {
@@ -40,14 +44,14 @@ h2 {
     background-color: none;
     display: flex;
     border: 2px groove;
-    border-color: rgba(251, 255, 0, 0.815);
+    border-color: $color2;
 }
 
 .titulo {
     text-decoration: none;
     background-color: none;
     font-size: 50px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-transform: uppercase;
     padding: 10px 15px 15px 15px;
     width: 100%;
@@ -55,7 +59,7 @@ h2 {
 }
 
 .titulo a {
-    color: rgba(251, 255, 0, 0.815);
+    color: $color2;
     text-decoration: none;
     margin: 0 auto;
     justify-content: center;
@@ -67,6 +71,7 @@ h2 {
     color: gold;
 }
 
+
 .links {
     text-align: right;
     list-style: none;
@@ -76,7 +81,7 @@ h2 {
 }
 
 .links a {
-    color: rgba(251, 255, 0, 0.815);
+    color: $color2;
     text-decoration: none;
     margin: 25px 25px 25px 45px;
     transition: 0.35s;
@@ -86,6 +91,7 @@ h2 {
     transition: 0.35s;
     color: grey;
     text-decoration: underline;
+
 }
 
 .footer {
@@ -96,7 +102,7 @@ h2 {
 
 .footer a {
     text-decoration: none;
-    color: rgba(251, 255, 0, 0.815);
+    color: $color2;
 }
 
 .footer a:hover {
@@ -105,6 +111,8 @@ h2 {
 }
 
 /*---------------------------------INDEX--------------------------*/
+
+
 .portada {
     width: 90%;
     height: 800px;
@@ -112,6 +120,7 @@ h2 {
     background-image: url(../media/img/img12portada.jpg);
     background-size: cover;
 }
+
 
 .presentacion {
     background-image: url(../media/img/img13.jpg);
@@ -121,8 +130,8 @@ h2 {
     margin-top: 50px;
 }
 
-.presentacion p {
-    font-family: times;
+.presentacion p{
+    font-family: $font1;
     font-size: 35px;
     border: 1px black;
     border-style: hidden;
@@ -132,16 +141,21 @@ h2 {
     margin-top: 50px;
 }
 
+
+
 /*------------------------CONTACTO--------------------*/
+
+
 .form-container {
     width: 60%;
 }
 
-@media only screen and (max-width: 1024px) {
-    .form-container {
-        width: 100%;
+    @media only screen and (max-width: 1024px) {
+        .form-container {
+            width: 100%;
+        }
     }
-}
+
 
 .contacto a {
     color: grey;
@@ -149,7 +163,7 @@ h2 {
 }
 
 .seguinos {
-    color: rgba(251, 255, 0, 0.815);
+    color: $color2;
     font-size: 45px;
     text-align: center;
     margin-bottom: 60px;
@@ -173,13 +187,13 @@ h2 {
     }
 
     .redes a {
-        margin: 20px;
+        margin: 20px
     }
 }
 
 .redes a {
     text-decoration: none;
-    color: rgba(251, 255, 0, 0.815);
+    color: $color2;
 }
 
 .fb {
@@ -225,7 +239,7 @@ label {
 }
 
 .button {
-    background-color: rgba(251, 255, 0, 0.815);
+    background-color: $color2;
     color: black;
     font-size: 20px;
 }
@@ -235,7 +249,9 @@ label {
     color: gold;
 }
 
+
 /*---------------------------------------TOUR------------------------*/
+
 .tour a {
     color: grey;
     text-decoration: underline;
@@ -253,7 +269,12 @@ label {
     text-align: center;
 }
 
+
+
+
+
 /*-----------------------------------------GALERIA----------------------------------------------------------------------------------*/
+
 .galeria {
     min-height: 900px;
     width: 100%;
@@ -306,6 +327,7 @@ label {
 .img5 {
     background-color: darkmagenta;
     background-image: url(../media/img/img2.jpg);
+
 }
 
 .img6 {
@@ -324,19 +346,20 @@ label {
     background-position: bottom;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 479px) {
+@media only screen and (min-width:320px) and (max-width:479px) {
     .img {
         height: 275px;
     }
 }
 
-@media only screen and (min-width: 480px) and (max-width: 1023px) {
+@media only screen and (min-width:480px) and (max-width:1023px) {
     .galeria {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width:1024px) {
+
     .img1 {
         grid-column: 1/2;
         grid-row: 1/3;
@@ -380,9 +403,8 @@ label {
 }
 
 /* ------------------------------------------TRAYECTORIA----------------------------------- */
+
 .trayectoria a {
     color: grey;
     text-decoration: underline;
 }
-
-/*# sourceMappingURL=estilos.css.map */
