@@ -11,7 +11,7 @@ body {
     color: rgb(179, 179, 2);
 }
 
-h2 {
+body h2 {
     animation-duration: 3s;
     animation-name: slidein;
 }
@@ -133,6 +133,38 @@ h2 {
 }
 
 /*------------------------CONTACTO--------------------*/
+.redes {
+    background-color: black;
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.redes a {
+    text-decoration: none;
+    color: rgba(251, 255, 0, 0.815);
+}
+
+.redes a:hover {
+    transition: 1s ease;
+    color: goldenrod;
+}
+
+.redes a:hover .seguinos {
+    color: rgba(251, 255, 0, 0.815);
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.fb {
+    margin-right: 120px;
+}
+
+.yt {
+    margin-left: 120px;
+}
+
 .form-container {
     width: 60%;
 }
@@ -148,80 +180,19 @@ h2 {
     text-decoration: underline;
 }
 
-.seguinos {
-    color: rgba(251, 255, 0, 0.815);
-    font-size: 45px;
-    text-align: center;
-    margin-bottom: 60px;
-}
-
-.redes {
-    background-color: black;
-    font-size: 75px;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
 @media only screen and (max-width: 580px) {
-    .seguinos {
-        font-size: 25px;
-    }
-
     .redes {
         font-size: 25px;
         margin-bottom: 20px;
     }
 
-    .redes a {
+    .redes .seguinos {
+        font-size: 25px;
+    }
+
+    .redes .seguinos a {
         margin: 20px;
     }
-}
-
-.redes a {
-    text-decoration: none;
-    color: rgba(251, 255, 0, 0.815);
-}
-
-.fb {
-    margin-right: 120px;
-}
-
-.yt {
-    margin-left: 120px;
-}
-
-.redes a:hover {
-    transition: 1s ease;
-    color: goldenrod;
-}
-
-.form {
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-fieldset {
-    width: 500px;
-    display: inline-block;
-    justify-content: center;
-}
-
-.legend {
-    font-size: 25px;
-    text-transform: uppercase;
-}
-
-.casillero {
-    background-color: rgb(170, 170, 170);
-    justify-content: center;
-}
-
-label {
-    font-size: 20px;
-}
-
-.radio {
-    display: none;
 }
 
 .button {
@@ -249,11 +220,16 @@ label {
     border: 1px dotted gold;
 }
 
-.dia i {
+.fechas .dia i {
     text-align: center;
 }
 
 /*-----------------------------------------GALERIA----------------------------------------------------------------------------------*/
+.galeria-link a {
+    color: grey;
+    text-decoration: underline;
+}
+
 .galeria {
     min-height: 900px;
     width: 100%;
@@ -263,12 +239,7 @@ label {
     gap: 10px;
 }
 
-.galeria-link a {
-    color: grey;
-    text-decoration: underline;
-}
-
-.img {
+.galeria .img {
     background-color: coral;
     border: 1px solid black;
     background-position: center;
@@ -278,7 +249,7 @@ label {
     transition: all 0.5s;
 }
 
-.img:hover {
+.galeria .img:hover {
     transform: scale(1.1);
     transition: all 0.5s;
 }

@@ -12,13 +12,11 @@ body {
     display: grid;
     background-color: black;
     color: $color1;
+    h2 {
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
 }
-
-h2 {
-    animation-duration: 3s;
-    animation-name: slidein;
-}
-
 @keyframes slidein {
     from {
         margin-left: 100%;
@@ -36,7 +34,6 @@ h2 {
     background-color: black !important;
     border: groove $color2;
 }
-
 
 /* NAVBAR NUEVO FIN */
 .navv {
@@ -56,21 +53,18 @@ h2 {
     padding: 10px 15px 15px 15px;
     width: 100%;
     margin: 0 auto;
+    a {
+        color: $color2;
+        text-decoration: none;
+        margin: 0 auto;
+        justify-content: center;
+        transition: 1s;
+            &:hover {
+                transition: 1s;
+                color: gold;
+            }
+    }
 }
-
-.titulo a {
-    color: $color2;
-    text-decoration: none;
-    margin: 0 auto;
-    justify-content: center;
-    transition: 1s;
-}
-
-.titulo a:hover {
-    transition: 1s;
-    color: gold;
-}
-
 
 .links {
     text-align: right;
@@ -78,38 +72,31 @@ h2 {
     margin: 25px;
     font-size: 30px;
     display: flex;
+    a {
+        color: $color2;
+        text-decoration: none;
+        margin: 25px 25px 25px 45px;
+        transition: 0.35s;
+        &:hover {
+            transition: 0.35s;
+            color: grey;
+            text-decoration: underline;
+        }
+    }
 }
-
-.links a {
-    color: $color2;
-    text-decoration: none;
-    margin: 25px 25px 25px 45px;
-    transition: 0.35s;
-}
-
-.links a:hover {
-    transition: 0.35s;
-    color: grey;
-    text-decoration: underline;
-
-}
-
 .footer {
     background-color: black;
     font-size: 25px;
     text-align: center;
+    a {
+        text-decoration: none;
+        color: $color2;
+        &:hover {
+            transition: 1s ease;
+            color: goldenrod;
+        }
+    }
 }
-
-.footer a {
-    text-decoration: none;
-    color: $color2;
-}
-
-.footer a:hover {
-    transition: 1s ease;
-    color: goldenrod;
-}
-
 /*---------------------------------INDEX--------------------------*/
 
 
@@ -120,30 +107,59 @@ h2 {
     background-image: url(../media/img/img12portada.jpg);
     background-size: cover;
 }
-
-
 .presentacion {
     background-image: url(../media/img/img13.jpg);
     background-size: cover;
     background-attachment: fixed;
     margin: 0 auto;
     margin-top: 50px;
+    p{
+        font-family: $font1;
+        font-size: 35px;
+        border: 1px black;
+        border-style: hidden;
+        margin: 15px;
+        padding: 10px;
+        color: black;
+        margin-top: 50px;
+    }
 }
 
-.presentacion p{
-    font-family: $font1;
-    font-size: 35px;
-    border: 1px black;
-    border-style: hidden;
-    margin: 15px;
-    padding: 10px;
-    color: black;
-    margin-top: 50px;
-}
+
 
 
 
 /*------------------------CONTACTO--------------------*/
+
+.redes {
+    background-color: black;
+    font-size: 75px;
+    text-align: center;
+    margin-bottom: 100px;
+    a {
+        text-decoration: none;
+        color: $color2;
+
+        &:hover {
+            transition: 1s ease;
+            color: goldenrod;
+
+    .seguinos {
+        color: $color2;
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 60px;
+        }
+    }
+    }
+}
+.fb {
+    margin-right: 120px;
+}
+.yt {
+    margin-left: 120px;
+}
+
 
 
 .form-container {
@@ -162,93 +178,33 @@ h2 {
     text-decoration: underline;
 }
 
-.seguinos {
-    color: $color2;
-    font-size: 45px;
-    text-align: center;
-    margin-bottom: 60px;
-}
 
-.redes {
-    background-color: black;
-    font-size: 75px;
-    text-align: center;
-    margin-bottom: 100px;
-}
+
+
 
 @media only screen and (max-width: 580px) {
-    .seguinos {
-        font-size: 25px;
-    }
 
     .redes {
         font-size: 25px;
         margin-bottom: 20px;
+        .seguinos {
+            font-size: 25px;
+        a {
+            margin: 20px
+        }
     }
-
-    .redes a {
-        margin: 20px
-    }
 }
-
-.redes a {
-    text-decoration: none;
-    color: $color2;
-}
-
-.fb {
-    margin-right: 120px;
-}
-
-.yt {
-    margin-left: 120px;
-}
-
-.redes a:hover {
-    transition: 1s ease;
-    color: goldenrod;
-}
-
-.form {
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-fieldset {
-    width: 500px;
-    display: inline-block;
-    justify-content: center;
-}
-
-.legend {
-    font-size: 25px;
-    text-transform: uppercase;
-}
-
-.casillero {
-    background-color: rgb(170, 170, 170);
-    justify-content: center;
-}
-
-label {
-    font-size: 20px;
-}
-
-.radio {
-    display: none;
 }
 
 .button {
     background-color: $color2;
     color: black;
     font-size: 20px;
+    &:hover {
+        background-color: black;
+        color: gold;
+    }
 }
-
-.button:hover {
-    background-color: black;
-    color: gold;
-}
-
 
 /*---------------------------------------TOUR------------------------*/
 
@@ -263,17 +219,19 @@ label {
     font-size: 30px;
     margin-bottom: 50px;
     border: 1px dotted gold;
+    .dia i {
+        text-align: center;
+    }
 }
-
-.dia i {
-    text-align: center;
-}
-
-
 
 
 
 /*-----------------------------------------GALERIA----------------------------------------------------------------------------------*/
+
+.galeria-link a {
+    color: grey;
+    text-decoration: underline;
+}
 
 .galeria {
     min-height: 900px;
@@ -282,26 +240,19 @@ label {
     display: grid;
     padding: 20px;
     gap: 10px;
+    .img {
+        background-color: coral;
+        border: 1px solid black;
+        background-position: center;
+        background-size: cover;
+        border-radius: 5px;
+        box-shadow: 0 0 5px grey;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.1);
+            transition: all 0.5s;
+    }
 }
-
-.galeria-link a {
-    color: grey;
-    text-decoration: underline;
-}
-
-.img {
-    background-color: coral;
-    border: 1px solid black;
-    background-position: center;
-    background-size: cover;
-    border-radius: 5px;
-    box-shadow: 0 0 5px grey;
-    transition: all 0.5s;
-}
-
-.img:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
 }
 
 .img1 {
