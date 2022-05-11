@@ -1,359 +1,374 @@
 * {
-    margin: 5px;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 5px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* --------------------------------GENERAL--------------------------*/
 body {
-    display: grid;
-    background-color: black;
-    color: rgb(179, 179, 2);
+  display: grid;
+  background-color: black;
+  color: rgb(179, 179, 2);
 }
-
 body h2 {
-    animation-duration: 3s;
-    animation-name: slidein;
+  animation-duration: 3s;
+  animation-name: slidein;
 }
 
 @keyframes slidein {
-    from {
-        margin-left: 100%;
-        width: 300%;
-    }
-
-    to {
-        margin-left: 0%;
-        width: 100%;
-    }
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
-
 /* NAVBAR NUEVO INICIO */
 .navbar {
-    background-color: black !important;
-    border: groove rgba(251, 255, 0, 0.815);
+  background-color: black !important;
+  border: groove rgba(251, 255, 0, 0.815);
 }
 
 /* NAVBAR NUEVO FIN */
 .navv {
-    width: 100%;
-    background-color: none;
-    display: flex;
-    border: 2px groove;
-    border-color: rgba(251, 255, 0, 0.815);
+  width: 100%;
+  background-color: none;
+  display: flex;
+  border: 2px groove;
+  border-color: rgba(251, 255, 0, 0.815);
 }
 
 .titulo {
-    text-decoration: none;
-    background-color: none;
-    font-size: 50px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    text-transform: uppercase;
-    padding: 10px 15px 15px 15px;
-    width: 100%;
-    margin: 0 auto;
+  text-decoration: none;
+  background-color: none;
+  font-size: 50px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-transform: uppercase;
+  padding: 10px 15px 15px 15px;
+  width: 100%;
+  margin: 0 auto;
 }
-
 .titulo a {
-    color: rgba(251, 255, 0, 0.815);
-    text-decoration: none;
-    margin: 0 auto;
-    justify-content: center;
-    transition: 1s;
+  color: rgba(251, 255, 0, 0.815);
+  text-decoration: none;
+  margin: 0 auto;
+  justify-content: center;
+  transition: 1s;
 }
-
 .titulo a:hover {
-    transition: 1s;
-    color: gold;
+  transition: 1s;
+  color: gold;
 }
 
 .links {
-    text-align: right;
-    list-style: none;
-    margin: 25px;
-    font-size: 30px;
-    display: flex;
+  text-align: right;
+  list-style: none;
+  margin: 25px;
+  font-size: 30px;
+  display: flex;
 }
-
 .links a {
-    color: rgba(251, 255, 0, 0.815);
-    text-decoration: none;
-    margin: 25px 25px 25px 45px;
-    transition: 0.35s;
+  color: rgba(251, 255, 0, 0.815);
+  text-decoration: none;
+  margin: 25px 25px 25px 45px;
+  transition: 0.35s;
 }
-
 .links a:hover {
-    transition: 0.35s;
-    color: grey;
-    text-decoration: underline;
+  transition: 0.35s;
+  color: grey;
+  text-decoration: underline;
 }
 
 .footer {
-    background-color: black;
-    font-size: 25px;
-    text-align: center;
+  background-color: black;
+  font-size: 25px;
+  text-align: center;
 }
-
 .footer a {
-    text-decoration: none;
-    color: rgba(251, 255, 0, 0.815);
+  text-decoration: none;
+  color: rgba(251, 255, 0, 0.815);
 }
-
 .footer a:hover {
-    transition: 1s ease;
-    color: goldenrod;
+  transition: 1s ease;
+  color: goldenrod;
 }
 
+@media only screen and (max-width: 580px) {
+  .footer {
+    font-size: 12px;
+  }
+  .footer a {
+    font-size: 12px;
+    margin: 0px;
+  }
+}
 /*---------------------------------INDEX--------------------------*/
 .portada {
-    width: 90%;
-    height: 800px;
-    margin: auto auto;
-    background-image: url(../media/img/img12portada.jpg);
-    background-size: cover;
+  width: 90%;
+  height: 800px;
+  margin: auto auto;
+  background-image: url(../media/img/img12portada.jpg);
+  background-size: cover;
 }
 
 .presentacion {
-    background-image: url(../media/img/img13.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0 auto;
-    margin-top: 50px;
+  background-image: url(../media/img/img13.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0 auto;
+  margin-top: 50px;
 }
-
 .presentacion p {
-    font-family: times;
-    font-size: 35px;
-    border: 1px black;
-    border-style: hidden;
-    margin: 15px;
-    padding: 10px;
-    color: black;
-    margin-top: 50px;
+  font-family: times;
+  font-size: 35px;
+  border: 1px black;
+  border-style: hidden;
+  margin: 15px;
+  padding: 10px;
+  color: black;
+  margin-top: 50px;
 }
 
 /*------------------------CONTACTO--------------------*/
 .redes {
-    background-color: black;
-    font-size: 75px;
-    text-align: center;
-    margin-bottom: 100px;
+  background-color: black;
+  font-size: 75px;
+  text-align: center;
+  margin-bottom: 100px;
 }
-
 .redes a {
-    text-decoration: none;
-    color: rgba(251, 255, 0, 0.815);
+  text-decoration: none;
+  color: rgba(251, 255, 0, 0.815);
 }
-
 .redes a:hover {
-    transition: 1s ease;
-    color: goldenrod;
+  transition: 1s ease;
+  color: goldenrod;
 }
-
 .redes a:hover .seguinos {
-    color: rgba(251, 255, 0, 0.815);
-    font-size: 45px;
-    text-align: center;
-    margin-bottom: 60px;
+  color: rgba(251, 255, 0, 0.815);
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .fb {
-    margin-right: 120px;
+  margin-right: 120px;
 }
 
 .yt {
-    margin-left: 120px;
+  margin-left: 120px;
 }
 
 .form-container {
-    width: 60%;
+  width: 60%;
 }
 
 @media only screen and (max-width: 1024px) {
-    .form-container {
-        width: 100%;
-    }
+  .form-container {
+    width: 100%;
+  }
 }
-
 .contacto a {
-    color: grey;
-    text-decoration: underline;
+  color: grey;
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 580px) {
-    .redes {
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-
-    .redes .seguinos {
-        font-size: 25px;
-    }
-
-    .redes .seguinos a {
-        margin: 20px;
-    }
+  .redes {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .redes a {
+    margin: 20px;
+  }
+  .redes a .seguinos {
+    font-size: 25px;
+  }
 }
-
-.button {
-    background-color: rgba(251, 255, 0, 0.815);
-    color: black;
-    font-size: 20px;
+.button, .button:hover {
+  background-color: rgba(251, 255, 0, 0.815);
+  color: black;
+  font-size: 20px;
 }
-
 .button:hover {
-    background-color: black;
-    color: gold;
+  background-color: black;
+  color: gold;
 }
 
 /*---------------------------------------TOUR------------------------*/
 .tour a {
-    color: grey;
-    text-decoration: underline;
+  color: grey;
+  text-decoration: underline;
 }
 
 .fechas {
-    display: flex;
-    justify-content: space-evenly;
-    font-size: 30px;
-    margin-bottom: 50px;
-    border: 1px dotted gold;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 30px;
+  margin-bottom: 50px;
+  border: 1px dotted gold;
 }
-
 .fechas .dia i {
-    text-align: center;
+  text-align: center;
 }
 
-/*-----------------------------------------GALERIA----------------------------------------------------------------------------------*/
+.opacity--br1 {
+  opacity: 0.7;
+}
+
+.opacity--br2 {
+  opacity: 0.8;
+}
+
+.opacity--br3 {
+  opacity: 0.9;
+}
+
+.opacity--br4 {
+  opacity: 1;
+}
+
+.card {
+  margin-bottom: 10px !important;
+  background-color: black !important;
+  background-image: url(../media/img/img14.JPG);
+  background-size: cover;
+}
+.card-text {
+  font-weight: bolder;
+}
+
+h4, .card .card-title, .card-text {
+  text-shadow: 2px 5px 5px black !important;
+}
+
+/*--------------------------------------------GALERIA----------------------------------------------------------------------*/
 .galeria-link a {
-    color: grey;
-    text-decoration: underline;
+  color: grey;
+  text-decoration: underline;
 }
 
 .galeria {
-    min-height: 900px;
-    width: 100%;
-    background-color: black;
-    display: grid;
-    padding: 20px;
-    gap: 10px;
+  min-height: 900px;
+  width: 100%;
+  background-color: black;
+  display: grid;
+  padding: 20px;
+  gap: 10px;
 }
-
 .galeria .img {
-    background-color: coral;
-    border: 1px solid black;
-    background-position: center;
-    background-size: cover;
-    border-radius: 5px;
-    box-shadow: 0 0 5px grey;
-    transition: all 0.5s;
+  background-color: coral;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 5px grey;
+  transition: all 0.5s;
 }
-
 .galeria .img:hover {
-    transform: scale(1.1);
-    transition: all 0.5s;
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 .img1 {
-    background-color: blue;
-    background-image: url(../media/img/img5.jpg);
+  background-color: blue;
+  background-image: url(../media/img/img5.jpg);
 }
 
 .img2 {
-    background-color: cadetblue;
-    background-image: url(../media/img/img1.jpg);
+  background-color: cadetblue;
+  background-image: url(../media/img/img1.jpg);
 }
 
 .img3 {
-    background-color: brown;
-    background-image: url(../media/img/img12portada.jpg);
+  background-color: brown;
+  background-image: url(../media/img/img12portada.jpg);
 }
 
 .img4 {
-    background-color: red;
-    background-image: url(../media/img/img9.jpg);
+  background-color: red;
+  background-image: url(../media/img/img9.jpg);
 }
 
 .img5 {
-    background-color: darkmagenta;
-    background-image: url(../media/img/img2.jpg);
+  background-color: darkmagenta;
+  background-image: url(../media/img/img2.jpg);
 }
 
 .img6 {
-    background-color: cornflowerblue;
-    background-image: url(../media/img/img3.jpg);
+  background-color: cornflowerblue;
+  background-image: url(../media/img/img3.jpg);
 }
 
 .img7 {
-    background-color: darkolivegreen;
-    background-image: url(../media/img/img10.jpg);
+  background-color: darkolivegreen;
+  background-image: url(../media/img/img10.jpg);
 }
 
 .img8 {
-    background-color: chartreuse;
-    background-image: url(../media/img/img4.jpg);
-    background-position: bottom;
+  background-color: chartreuse;
+  background-image: url(../media/img/img4.jpg);
+  background-position: bottom;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-    .img {
-        height: 275px;
-    }
+  .img {
+    height: 275px;
+  }
 }
-
 @media only screen and (min-width: 480px) and (max-width: 1023px) {
-    .galeria {
-        grid-template-columns: 1fr 1fr;
-    }
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
 @media only screen and (min-width: 1024px) {
-    .img1 {
-        grid-column: 1/2;
-        grid-row: 1/3;
-    }
+  .img1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
 
-    .img2 {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
+  .img2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
-    .img3 {
-        grid-column: 3/5;
-        grid-row: 1/2;
-    }
+  .img3 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+  }
 
-    .img4 {
-        grid-column: 2/3;
-        grid-row: 2/4;
-    }
+  .img4 {
+    grid-column: 2/3;
+    grid-row: 2/4;
+  }
 
-    .img5 {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
+  .img5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
 
-    .img6 {
-        grid-column: 4/5;
-        grid-row: 2/3;
-    }
+  .img6 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
 
-    .img7 {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
+  .img7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 
-    .img8 {
-        grid-column: 3/5;
-        grid-row: 3/4;
-        background-position: bottom;
-    }
+  .img8 {
+    grid-column: 3/5;
+    grid-row: 3/4;
+    background-position: bottom;
+  }
 }
-
 /* ------------------------------------------TRAYECTORIA----------------------------------- */
 .trayectoria a {
-    color: grey;
-    text-decoration: underline;
+  color: grey;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=estilos.css.map */
